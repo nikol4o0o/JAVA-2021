@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" prefHeight="299.0" prefWidth="592.0" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane layoutY="4.0" prefHeight="290.0" prefWidth="564.0" styleClass="grid" vgap="14.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="4.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0" minWidth="10.0" prefWidth="178.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="0.0" prefWidth="128.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="130.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="126.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="117.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="216.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField id="text-field" fx:id="txtInput" alignment="TOP_RIGHT" prefHeight="53.0" prefWidth="548.0" text="0" GridPane.columnSpan="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </TextField>
+                <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="208.0" prefWidth="177.0" GridPane.rowIndex="1">
+                    <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="216.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="164.0" />
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="208.0" prefWidth="157.0" style="-fx-background-color: lightgray;">
+                            <effect>
+                                <Bloom threshold="0.81" />
+                            </effect>
+                        </Region>
+                        <GridPane hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="208.0" prefWidth="167.0" vgap="2.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <children>
+                                <Button id="button" fx:id="btnOne" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnOneOnAction" scaleZ="4.0" text="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnTwo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnTwoOnAction" scaleZ="4.0" text="2" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnThree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnThreeOnAction" scaleZ="4.0" text="3" GridPane.columnIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnFive" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnFiveOnAction" scaleZ="4.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnFour" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnFourOnAction" scaleZ="4.0" text="4" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnSix" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSixOnAction" scaleZ="4.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnSeven" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSevenOnAction" scaleZ="4.0" text="7" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnEight" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnEightOnAction" scaleZ="4.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnNine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNineOnAction" scaleZ="4.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnZero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnZeroOnAction" scaleZ="4.0" text="0" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnTwoZero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnTwoZeroOnAction" scaleZ="4.0" text="00" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </GridPane>
+                    </children>
+                </StackPane>
+                <StackPane prefHeight="217.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="213.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="110.0" />
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="105.0" style="-fx-background-color: lightgray;">
+                            <effect>
+                                <Bloom threshold="0.81" />
+                            </effect>
+                        </Region>
+                        <GridPane hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="208.0" prefWidth="117.0" vgap="2.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <children>
+                                <Button id="button" fx:id="btnPlus" mnemonicParsing="false" onAction="#btnPlusOnAction" prefHeight="155.0" prefWidth="46.0" text="+" GridPane.rowSpan="3">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnMinus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMinusOnAction" prefHeight="66.0" prefWidth="47.0" text="-" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnMultiply" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMultiplyOnAction" text="*" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnDivide" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDivideOnAction" text="/" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnResult" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnResultOnAction" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnDot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDotOnAction" text="." GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </GridPane>
+                    </children>
+                </StackPane>
+                <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="96.0" spacing="18.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                    <children>
+                        <StackPane prefHeight="157.0" prefWidth="118.0">
+                            <children>
+                                <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="132.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="119.0" />
+                                <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="128.0" prefWidth="112.0" style="-fx-background-color: lightgray;">
+                                    <effect>
+                                        <Bloom threshold="0.81" />
+                                    </effect>
+                                </Region>
+                                <GridPane hgap="14.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="127.0" prefWidth="110.0" vgap="14.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" percentHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" percentHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <padding>
+                                        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+                                    </padding>
+                                    <children>
+                                        <Button id="button" fx:id="btnC" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnCOnAction" text="C">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button id="button" fx:id="btnCA" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnCAOnAction" text="C/A" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </StackPane>
+                        <Button id="button" fx:id="btnOFF" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnOFFOnAction" prefHeight="31.0" prefWidth="118.0" text="OFF" textAlignment="CENTER" VBox.vgrow="NEVER">
+                            <VBox.margin>
+                                <Insets left="8.0" right="8.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <StackPane prefHeight="217.0" prefWidth="99.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="213.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="110.0" />
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="105.0" style="-fx-background-color: lightgray;">
+                            <effect>
+                                <Bloom threshold="0.81" />
+                            </effect>
+                        </Region>
+                        <GridPane hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="208.0" prefWidth="117.0" vgap="2.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" percentHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <children>
+                                <Button id="button" fx:id="btnM" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMOnAction" prefHeight="66.0" prefWidth="47.0" text="M">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnMPlus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMPlusOnAction" text="M+" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnMMinus" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMMinusOnAction" text="M-" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button id="button" fx:id="btnMClear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnMClearOnAction" text="MC" GridPane.rowIndex="3">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </GridPane>
+                    </children>
+                </StackPane>
+            </children>
+        </GridPane>
+    </children>
+</fx:root>
