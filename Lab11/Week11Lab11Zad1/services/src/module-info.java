@@ -1,0 +1,3 @@
+module services {
+    exports services;
+}

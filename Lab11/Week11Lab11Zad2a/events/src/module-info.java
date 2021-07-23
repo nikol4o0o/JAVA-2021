@@ -1,0 +1,3 @@
+module events {
+    exports events;
+}
