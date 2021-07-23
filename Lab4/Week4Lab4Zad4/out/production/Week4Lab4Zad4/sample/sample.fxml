@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <GridPane layoutY="8.0" prefHeight="149.0" prefWidth="491.0" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="8.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="226.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="10.0" prefWidth="381.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <MenuBar GridPane.columnSpan="2">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Convert">
+                            <items>
+                                <MenuItem fx:id="mniDecimal" mnemonicParsing="false" onAction="#mniDecimalOnAction" text="Decimal" />
+                                <MenuItem fx:id="mniHex" mnemonicParsing="false" onAction="#mniHexOnAction" text="Hex" />
+                                <MenuItem fx:id="mniBinary" mnemonicParsing="false" onAction="#mniBinaryOnAction" text="Binary" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Quit">
+                            <items>
+                                <MenuItem fx:id="mniExit" mnemonicParsing="false" onAction="#mniExitOnAction" text="Exit" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <Button fx:id="btnDecimal" mnemonicParsing="false" onAction="#btnDecimalOnAction" prefHeight="27.0" prefWidth="157.0" text="Decimal" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnHex" mnemonicParsing="false" onAction="#btnHexOnAction" prefHeight="27.0" prefWidth="156.0" text="Hex" GridPane.rowIndex="2" />
+                <Button fx:id="btnBinary" mnemonicParsing="false" onAction="#btnBinaryOnAction" prefHeight="27.0" prefWidth="157.0" text="Binary" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="txtDecimal" onAction="#txtDecimalOnAction" prefHeight="27.0" prefWidth="49.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtHex" onAction="#txtHexOnAction" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtBinary" onAction="#txtBinaryOnAction" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </TextField>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
